@@ -1,0 +1,253 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'star wars', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+body {
+    background-image: url('./universo-bg.jpg');
+    background-size: cover;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_img {
+    width: 40%;
+    height: auto;
+}
+
+.texto_logo {
+    font-size: 1rem;
+}
+
+.social_media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    font-size: 1.2rem;
+}
+
+i:hover {
+    color: gold;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: gold;
+    font-weight: 300;
+}
+
+.main_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0 20px;
+}
+
+.cards {
+    width: 230px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px;
+}
+
+.cards:hover {
+    transform: scale(1.02);
+}
+
+.character_name_bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.character_name {
+    color: gold;
+    font-size: 1rem;
+}
+
+.card_planeta {
+    width: 345px;
+    height: 470px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px;
+}
+
+.planet_bg {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.planet_name {
+    color: gold;
+    font-size: 1rem;
+}
+
+.botoes {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 90px;
+    height: 30px;
+    background-color: gold;
+    color: black;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: black;
+    color: gold;
+}
+
+#botao_voltar {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 40px 0 20px 0;
+}
+
+.footer_logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.copyright {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.modal {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+}
+
+.modal_content {
+    width: 35vw;
+    height: 90vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 30px 10px;
+    align-items: center;
+}
+
+.character_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-position: 50% 10%;
+    background-size: cover;
+}
+.planet_image {
+    width: 210px;
+    height: 210px;
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.details {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: gold;
+}
+
+.loading_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+#loading_gif {
+    width: 50px;
+    margin: 7px;
+}
+
+.loading {
+    font-weight: 600;
+}

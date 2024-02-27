@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Personagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./millennium-falcon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./star-wars-logo.png" class="logo_img"/>
+                <span class="texto_logo">Personagens</span>
+            </div>
+        </a>
+
+        <a href="./index2.html">
+            <div class="logo">
+                <img src="./star-wars-logo.png" class="logo_img"/>
+                <span class="texto_logo">Planetas</span>
+            </div>
+        </a>
+        
+        <div class="social_media">
+            <a href="https://www.instagram.com/paulo.igor.torres/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/paulo.igor.735" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://github.com/Paulo1022" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </header>
+
+    <div class="main_container">
+        <h2>Conheca todos os personagens de star wars em um so lugar</h2>
+        <div class="main_content" id="main_content"></div>
+
+        <div class="modal" id="modal">
+            <div class="modal_content" id="modal_content">
+                
+            </div>
+        </div>
+
+        <div class="botoes">
+            <button id="botao_voltar" disabled>Anterior</button>
+            <button id="botao_avancar" disabled>Proxima</button>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer_logo">Star Wars Personagens</p>
+        <p class="copyright">Desenvolvido por &copy; Paulo Igor S Torres</p>
+    </footer>
+
+    <div class="loading_bg" id="loading_bg">
+        <img src="./loading.gif" id="loading_gif"/>
+        <label class="loading">carregando . . .</label>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/cbefee05d5.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
